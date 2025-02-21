@@ -3,47 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header class="header">
-        <a href="index.html" class="home">
-            <span class="logo">
-                <img src="images/logo.png"  alt="logo">
-            </span>
-          
-            <span class="title" >   
-                <span>Hulman Lab</span>
-                <span>Steno Diabetes Center Aarhus</span>
-            </span>
-        </a>
+<body data-title="Home">
+    <header class="mainHeader">
+      <a href="index.html" class="logo">
+        <img src="images/PADMElogo.png" alt="Logo"></a>
+      <h1>Padme</h1>
+      <h3>Steno Diabetes Center Aarhus</h3>
       
-        <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-        <nav>
-              <a href="/research/" data-tooltip="Projects, results, funding...">
-                Research
-              </a>          
-              <a href="team.html" data-tooltip="About our team">
-                Team
-              </a>            
-              <a href="/news/" data-tooltip="News, events, ...">
-                News
-              </a>         
-              <a href="/contact/" data-tooltip="Email, address, and location">
-                Contact
-              </a>
-        </nav>
-    </header>
-   
+        <nav nav class="main-nav-links">
+              <a href="projects.html">
+                Projekter</a>          
 
-    <main>
-        <h2>Home Page</h2>
-        <p>This is a simple website template.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Simple Website</p>
+              <a href="team.html">
+                Team </a>            
+
+              <a href="news.html">
+                Nyheder</a>         
+                
+              <a href="contact.html">
+                Kontakt</a>
+         </nav>
+    </header>
+
+  <main>
+        <h2>Afsnit med kollega billede</h2>
+  </main>
+
+    <footer class="mainFooter">
+        <p>Samarbejdspartnere</p>
+
     </footer>
+    <script>
+    // Set the document title
+    document.title = 'Padme';
+  </script>
 </body>
 </html>
