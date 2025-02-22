@@ -13,13 +13,14 @@ body {
     text-align: center;
     background-color: #8EB4E3;
 }
-main h1,h2 {
-    text-align: center;
-}
 .logo img {
     height: 110px; 
     width: auto; 
 }
+main h1,h2 {
+    text-align: center;
+}
+
 
 /*Subpage*/
 .subpage-logo-and-title img {
@@ -51,7 +52,6 @@ main h1,h2 {
 }
 
 
-
 /*Footer*/
 footer {
     background: #333;
@@ -67,14 +67,14 @@ footer {
 .main-nav-links {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-
 .main-nav-links a {
     color: white; /* Set the desired color */
     text-decoration: none; /* Remove underline */
     padding: 10px;
 }
+
 
 /*Dropdown menu*/
 .dropdown-container {
@@ -107,6 +107,7 @@ footer {
 }
 
 .dropdown-container .dropdown {
-    left: 100%; /* Position the nested dropdown to the right */
+    right: 100%;
     top: 0;
+    
 }
