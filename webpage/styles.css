@@ -16,22 +16,7 @@ main h1,h2 {
     text-align: center;
 }
 
-/*Subpages header*/
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo img {
-        height: 50px;
-        width: auto;
-    }
-    width: 100%;   
-}
 
-.subpage-nav {
-    display: flex;
-    align-items: center;
-}
 
 .logo img {
     height: 110px; 
@@ -44,6 +29,21 @@ main h1,h2 {
     font-size: 1.5em;
     font-weight: bold;
     float: left;
+}
+.subpage-nav {
+    display: flex;
+    align-items: center;
+}
+/*Subpages header*/
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    width: 100%;   
 }
 
 
