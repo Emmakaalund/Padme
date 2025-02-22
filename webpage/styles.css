@@ -17,9 +17,6 @@ body {
     height: 110px; 
     width: auto; 
 }
-main h1,h2 {
-    text-align: center;
-}
 
 
 /*Subpage*/
@@ -52,16 +49,6 @@ main h1,h2 {
 }
 
 
-/*Footer*/
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
 /*Navigation bar*/
 .main-nav-links {
@@ -110,4 +97,24 @@ footer {
     right: 100%;
     top: 0;
     
+}
+
+/*Projects*/
+.project-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+}{}
+
+/*Footer*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
