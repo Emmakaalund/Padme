@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body data-title="Home">
     <header class="mainHeader">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo"> <!--Make a langauge logo here-->
         <img src="images/PADMElogo.png" alt="Logo"></a>
       <h1>Padme</h1>
       <h3>Steno Diabetes Center Aarhus</h3>
       
-        <nav nav class="main-nav-links">
-              <a href="projects.html">
-                Projekter</a>          
-
-              <a href="team.html">
-                Team </a>            
-
-              <a href="news.html">
-                Nyheder</a>         
-                
-              <a href="contact.html">
-                Kontakt</a>
-         </nav>
+        <nav class="main-nav-links">
+            <div class="dropdown-container">
+                <a href="projects.html">Projekter</a>
+                <div class="dropdown">
+                    <div class="dropdown-container">
+                        <a href="project1.html">Kliniske projekter</a>
+                        <div class="dropdown">
+                            <a href="/webpage/Projects/projectsSkabelon.html">Første kliniske projekt</a>
+                            <a href="project2.html">Andet kliniske projekt</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-container">
+                        <a href="project2.html">Anden forskningsaktivitet</a>
+                        <div class="dropdown">
+                            <a href="project3.html">Første forskningsaktivitet</a>
+                            <a href="project4.html">Anden forskningsaktivitet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="team.html">Team</a>
+            <a href="news.html">Nyheder</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
     </header>
 
   <main>
