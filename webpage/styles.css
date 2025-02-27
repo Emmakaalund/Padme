@@ -18,6 +18,26 @@ body {
     width: auto; 
 }
 
+/*Team  */
+.container{
+    margin: 0 auto; /*Center the container*/
+    width: 50%;
+}
+.team-container {
+    display: flex;
+    margin: 0 auto; /*Center the container*/
+    width: 50%;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.team-container img {
+    flex: 1 1 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+}
+
+
 
 /*Subpage*/
 .subpage-logo-and-title img {
