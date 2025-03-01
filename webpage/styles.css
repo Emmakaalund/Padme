@@ -37,6 +37,14 @@ body {
     max-width: calc(25% - 10px);
 }
 
+/*Contact*/
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    gap: 10px;
+}
+
 
 
 /*Subpage*/
@@ -145,7 +153,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
