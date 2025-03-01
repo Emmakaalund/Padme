@@ -67,6 +67,14 @@ body {
     background-color: #8EB4E3;
     
 }
+.Padme-titel {
+    font-weight: bold;
+    font-size: 1em;
+}
+.Steno-titel {
+    font-weight: bold;
+    font-size: 0.7em;
+}
 
 
 
@@ -81,7 +89,6 @@ body {
     text-decoration: none; /* Remove underline */
     padding: 10px;
 }
-
 
 /*Dropdown menu*/
 .dropdown-container {
@@ -114,9 +121,13 @@ body {
 }
 
 .dropdown-container .dropdown {
-    right: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-container .dropdown .dropdown {
     top: 0;
-    
+    left: 100%;
 }
 
 /*Projects*/
