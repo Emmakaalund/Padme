@@ -76,6 +76,11 @@ body {
 
 
 /*Subpage*/
+.subpage-logo-and-title {
+    display: flex;
+    align-items: center;  /* Vertically centers the text with the logo */
+    gap: 10px; /* Adds spacing between the logo and text */
+}
 .subpage-logo-and-title img {
     height: 55px;
     width: auto;
@@ -83,9 +88,11 @@ body {
 }
 .subpage-logo-and-title a {
     font-size: 1.5em;
-    font-weight: bold;
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center; /* Ensures all text stays in a row */
+
 }
 .subpage-nav {
     display: flex;
@@ -108,7 +115,6 @@ body {
     font-size: 1em;
 }
 .Steno-titel {
-    font-weight: bold;
     font-size: 0.7em;
 }
 
