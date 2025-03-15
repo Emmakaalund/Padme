@@ -129,7 +129,7 @@ body {
 }
 
 .dropdown-container .dropdown {
-    top: 100%;
+    top: 150%;
     left: 0;
 }
 
@@ -145,7 +145,7 @@ body {
     padding: 10px;
     background-color: whitesmoke;
     color: black;
-}{}
+}
 
 /*Footer*/
 footer {
