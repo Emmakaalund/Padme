@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
     <link rel="stylesheet" href="/webpage/styles.css">
 </head>
-<body data-title="Projects">
+
+<body data-title="SKAL ÆNDRES">
+    
     <header>
         <div id="header-placeholder"></div>
+        <div>  
+            <div class="contact-text-container">
+                <h1>Fornavn Efternavn</h1>
+                
+            </div>
+        </div>
     </header>
-    <h1>Titel på forskningsprojekt</h1>
-    <aside>   
-        <h3>Deltagerinformation</h3>
-   </aside>
-    <h2>Projektstatus</h2>
-    <h2>Projektets formål</h2>
-
-    <a>Upload PDF</a>
-    <h3>Forskere, projektstøtte</h3>
-    <div class="project-contact">
-        <h3>Kontakt</h3>
-        <span>Navn, stilling, Telefon, Mail</span>
-    </div>
+   
     <footer></footer>
+
     <script>
         // Load the header
         fetch('/webpage/header.html')
@@ -35,8 +33,9 @@
             .then(data => {
                 document.querySelector('footer').innerHTML = data;
             });
-        // Set the document title
-        document.title = document.body.getAttribute('data-title') + ' | Padme';
+            // Set the document title
+        document.title = document.body.getAttribute('data-title') + ' | PADME';
+    
     </script>
 </body>
-</html>
+</html></html>
