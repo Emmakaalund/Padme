@@ -64,6 +64,10 @@ body {
 .portrait-name {
     font-weight: bold;
 }
+.portrait-wrapper a {
+    text-decoration: none;
+}
+
 
 aside {
     width: 30%;
