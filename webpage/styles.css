@@ -18,7 +18,7 @@ body {
     width: auto; 
 }
 .mainFooter {
-    background: #333;
+    background: "whitesmoke";
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -140,7 +140,6 @@ aside {
     display: flex;
     justify-content: space-between;
     background-color: #8EB4E3;
-    
 }
 .Padme-titel {
     font-weight: bold;
@@ -157,6 +156,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
 }
 .main-nav-links a {
     color: white; /* Set the desired color */
@@ -203,6 +203,11 @@ aside {
     left: 100%;
     
 }
+.subpage-dropdown-container .dropdown .dropdown {
+    top: 0;
+    right: auto;
+    
+}
 
 /*Projects*/
 .project-contact {
@@ -221,10 +226,17 @@ aside {
     padding: 10px 0;
     width: 100%;
     flex: 1;
+    
+}
+.footer-logos img{
+    height: 50px;
+    width: auto;
 }
 
-
-.SDCALogo{
-    height: 100px;
-    overflow:hidden;
+.AUHLogo{
+   
+    overflow: hidden;
+}
+.RGMidtSDCA{
+   
 }
