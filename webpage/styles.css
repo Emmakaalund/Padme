@@ -229,14 +229,19 @@ aside {
     
 }
 .footer-logos img{
-    height: 50px;
-    width: auto;
+    max-height: 50px;
+
 }
 
 .AUHLogo{
-   
     overflow: hidden;
+    height: 35px;
 }
-.RGMidtSDCA{
-   
+.SDCA{
+   overflow: hidden;
+   height: 50px;
 }
+.RgMidt{
+    overflow: hidden;
+    height: 45px;
+ }
