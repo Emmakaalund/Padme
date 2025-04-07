@@ -9,18 +9,53 @@
     <header>
         <div id="header-placeholder"></div>
     </header>
-    <h1>Titel på forskningsprojekt</h1>
-    <aside>   
+    <div class="project-header">
+        <h1>Titel på forskningsprojekt</h1>
+    </div>
+    <aside>
         <h3>Deltagerinformation</h3>
-   </aside>
-    <h2>Projektstatus</h2>
-    <h2>Projektets formål</h2>
-
-    <a>Upload PDF</a>
-    <h3>Forskere, projektstøtte</h3>
+        <p>Skriv om deltagere her</p>
+    </aside>
+    <div class="project-status">
+        <h2>Projektstatus</h2>
+        <p>Status er opdateret ...</p>
+    </div>
+    <div class="project-purpose">
+        <h2>Projektets formål</h2>
+        <p>Skriv om projekts formål her</p>
+    </div>
+    <div class="project-upload">
+        <a>Upload PDF</a>
+        <h3>Forskere</h3>
+        <p>Skriv om projektstøtte her</p>
+    </div>
     <div class="project-contact">
-        <h3>Kontakt</h3>
-        <span>Navn, stilling, Telefon, Mail</span>
+        <h2>Kontakt</h2>
+        <img src="/webpage/images/StaffPictures/Person.png" alt="Person 1">
+        <h3>Navn</h3>
+        <p>Indsæt stilling</p>
+        <h3>Telefon</h3>
+        <p>Indsæt telefonnummer</p>
+        <h3>Mail</h3>
+        <p>Indsæt mail</p>
+    </div>
+    <div class="scroll-indicator">
+        <div data-target=".project-status">
+            <span class="dot"></span>
+            <span class="label">Projektstatus</span>
+        </div>
+        <div data-target=".project-purpose">
+            <span class="dot"></span>
+            <span class="label">Projektformål</span>
+        </div>
+        <div data-target=".project-upload">
+            <span class="dot"></span>
+            <span class="label">Upload PDF</span>
+        </div>
+        <div data-target=".project-contact">
+            <span class="dot"></span>
+            <span class="label">Kontakt</span>
+        </div>
     </div>
     <footer></footer>
     <script>
@@ -37,6 +72,30 @@
             });
         // Set the document title
         document.title = document.body.getAttribute('data-title') + ' | Padme';
+
+        // Scroll progress indicator functionality
+        const indicatorItems = document.querySelectorAll('.scroll-indicator div');
+        const sections = Array.from(indicatorItems).map(item => document.querySelector(item.dataset.target));
+
+        function updateIndicator() {
+            const scrollPosition = window.scrollY;
+            sections.forEach((section, index) => {
+                if (section.offsetTop <= scrollPosition) {
+                    indicatorItems[index].classList.add('active'); // Mark as active
+                } else {
+                    indicatorItems[index].classList.remove('active'); // Remove active if scrolled up
+                }
+            });
+        }
+
+        indicatorItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                sections[index].scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        window.addEventListener('scroll', updateIndicator);
+        window.addEventListener('load', updateIndicator);
     </script>
 </body>
 </html>

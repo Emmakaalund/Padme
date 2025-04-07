@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
+    <title>Kontakt | PADME</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body data-title="Kontakt">
-    
     <header>
         <div id="header-placeholder"></div>
-        <div>  
-            <div class="contact-text-container">
-                <h1>Kontakt</h1>
-                <p>Kontaktoplysninger, Sine, Ulla, Per og Jens</p>
+    </header>
+    <main>
+        <div class="centered-container">
+            <h1>Kontakt</h1>
+            <div class="contact-person">
+                <img src="/webpage/images/StaffPictures/Person.png" alt="Person 1">
+                <div class="contact-text">
+                    <h2>Sine</h2>
+                    <p>Indsæt titel</p>
+                    <p>Email: person1@example.com</p>
+                </div>
+            </div>
+            <div class="contact-person">
+                <img src="/webpage/images/StaffPictures/Person.png" alt="Person 2">
+                <div class="contact-text">
+                    <h2>Ulla</h2>
+                    <p>Indsæt titel</p>
+                    <p>Email: person2@example.com</p>
+                </div>
+            </div>
+            <div class="contact-person">
+                <img src="/webpage/images/StaffPictures/Person.png" alt="Person 3">
+                <div class="contact-text">
+                    <h2>Per</h2>
+                    <p>Indsæt titel</p>
+                    <p>Email: person3@example.com</p>
+                </div>
+            </div>
+            <div class="contact-person">
+                <img src="/webpage/images/StaffPictures/Person.png" alt="Person 4">
+                <div class="contact-text">
+                    <h2>Jens</h2>
+                    <p>Indsæt titel</p>
+                    <p>Email: person4@example.com</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="background-color: whitesmoke;">
-        <div class="contact-container">  <!-- Højde skal løbende ændres -->
-            <img src="/webpage/images/StaffPictures/PADMElogo.png"> 
+        <div class="contact-wrapper">
+            <div class="centered-container">
+                <p>Billede på steno</p>
+                <p>Billede fra klinik for gravid</p>
+            </div>
         </div>
-    </div>
-    </header>
-   
-    <footer></footer>
-
+    </main>
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
     <script>
-        // Load the header
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
@@ -39,9 +67,6 @@
             .then(data => {
                 document.querySelector('footer').innerHTML = data;
             });
-            // Set the document title
-        document.title = document.body.getAttribute('data-title') + ' | PADME';
-    
     </script>
 </body>
-</html></html>
+</html>
