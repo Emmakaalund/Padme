@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt | PADME</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body data-title="Kontakt">
     <header>
@@ -18,7 +18,7 @@
             <div class="contact-body-wrapper">
                 <div class="centered-container">
                     <div class="contact-person">
-                        <img src="/webpage/images/StaffPictures/Person.png" alt="Person 1">
+                        <img src="./images/StaffPictures/Person.png" alt="Person 1">
                         <div class="contact-text">
                             <h2>Sine</h2>
                             <p>Indsæt titel</p>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="contact-person">
-                        <img src="/webpage/images/StaffPictures/Person.png" alt="Person 2">
+                        <img src="./images/StaffPictures/Person.png" alt="Person 2">
                         <div class="contact-text">
                             <h2>Ulla</h2>
                             <p>Indsæt titel</p>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="contact-person">
-                        <img src="/webpage/images/StaffPictures/Person.png" alt="Person 3">
+                        <img src="./images/StaffPictures/Person.png" alt="Person 3">
                         <div class="contact-text">
                             <h2>Per</h2>
                             <p>Indsæt titel</p>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="contact-person">
-                        <img src="/webpage/images/StaffPictures/Person.png" alt="Person 4">
+                        <img src="./images/StaffPictures/Person.png" alt="Person 4">
                         <div class="contact-text">
                             <h2>Jens</h2>
                             <p>Indsæt titel</p>
@@ -61,12 +61,12 @@
         <div id="footer-placeholder"></div>
     </footer>
     <script>
-        fetch('header.html')
+        fetch('./header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
             });
-        fetch('footer.html')
+        fetch('./footer.html')
             .then(response => response.text())
             .then(data => {
                 document.querySelector('footer').innerHTML = data;
