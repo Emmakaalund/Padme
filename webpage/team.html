@@ -71,11 +71,21 @@
 
     <script>
         // Load the header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
+        fetch('/webpage/header.html')
+            .then(res => res.text())
+            .then(html => {
+                const header = document.querySelector('header');
+                header.innerHTML = html;
+
+                // 🔥 This executes any <script> inside the fetched HTML
+                const scripts = header.querySelectorAll('script');
+                scripts.forEach((script) => {
+                const newScript = document.createElement('script');
+                newScript.text = script.textContent;
+                document.body.appendChild(newScript);
+                });
+         });
+
         fetch('footer.html')
             .then(response => response.text())
             .then(data => {

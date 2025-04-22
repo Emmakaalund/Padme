@@ -274,42 +274,75 @@ body::after {
     padding: 10px;
 }
 
-/*Dropdown menu*/
+/* Dropdown Menu */
 .dropdown-container {
     position: relative;
 }
+
+/* Base dropdown style */
 .dropdown {
     display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.dropdown a {
+
+.dropdown a,
+.dropdown-option,
+.back-button {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    cursor: pointer;
 }
-.dropdown a:hover {
+
+.dropdown a:hover,
+.dropdown-option:hover,
+.back-button:hover {
     background-color: #575757;
 }
-.dropdown-container:hover > .dropdown {
+
+/* ✅ Hover still shows menu */
+.dropdown-container:hover:not(.open) > #mainDropdown {
     display: block;
 }
-.dropdown-container .dropdown {
+
+/* ✅ .open class overrides hover and keeps dropdown shown */
+.dropdown-container.open .dropdown {
+    display: block;
+}
+.dropdown-container.open #mainDropdown,
+.dropdown-container.open #clinicSubmenu,
+.dropdown-container.open #researchSubmenu {
+    display: none;
+}
+.dropdown-container.open #mainDropdown {
+    display: block;
+}
+.dropdown-container.open .submenu.active {
+    display: block;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none;
+    position: absolute;
     top: 150%;
+    left: 0;
 }
-.dropdown-container .dropdown .dropdown {
-    top: 0;
-    left: 100%;
+
+/* Back button */
+.back-button {
+    background-color: #444;
+    font-weight: bold;
 }
-.subpage-dropdown-container .dropdown .dropdown {
-    top: 0;
-    right: auto;
-}
+
+
+
 
 /*Projects*/
 .project-header{
