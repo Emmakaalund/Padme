@@ -12,36 +12,18 @@
         
         <div class="subpage-nav">
             <nav class="main-nav-links">
-                <a href="/webpage/news.html">Nyheder</a>
+                <a href="/webpage/news.html">News</a>
                 <a href="/webpage/team.html">Team</a>
                 <div class="dropdown-container" id="projectDropdown">
-                    <a href="#" 
-                    onmouseenter="showDropdown(event)" 
-                    onclick="toggleProjectMenu(event)">
-                    Projekt
-                 </a>
-                 
-                
-                    <div class="dropdown" id="mainDropdown">
-                        <div class="dropdown-option" onclick="showSubmenu('clinic', event)">Kliniske projekter</div>
-                        <div class="dropdown-option" onclick="showSubmenu('research', event)">Anden forskningsaktivitet</div>
-                    </div>
-                
-                    <div class="dropdown submenu" id="clinicSubmenu">
-                        <div class="back-button" onclick="goBack()">←</div>
-                        <a href="/webpage/Projects/ClinicProjects/projectsSkabelon.html">Første kliniske projekt</a>
-                        <a href="/webpage/Projects/ClinicProjects/projektSkabelonMedIndhold.html">Andet kliniske projekt</a>
-                    </div>
-                
-                    <div class="dropdown submenu" id="researchSubmenu">
-                        <div class="back-button" onclick="goBack()">←</div>
-                        <a href="/webpage/project3.html">Første forskningsaktivitet</a>
-                        <a href="/webpage/project4.html">Anden forskningsaktivitet</a>
+                    <p>Research</p>
+                    <div class="dropdown" id="mainDropdown"> 
+                        <a href="/webpage/Projects/ClinicProjects/projektSkabelonMedIndhold.html">Første kliniske projekt</a>
+                        <a href="/webpage/Projects/ClinicProjects/PrepareChild.html">PREPARE CHILD - AUH</a>
+
                     </div>
                 </div>
                 
-                
-                <a href="/webpage/contact.html">Kontakt</a>
+                <a href="/webpage/contact.html">Contact</a>
             </nav>
         </div>
     </div>
@@ -49,30 +31,14 @@
 <body>
     <script>
         let isDropdownLocked = false; // To track if menu is locked open after a click
-        
-        // Show the menu on hover if it's not already locked
-        
-        
+             
         // Show submenu based on the clicked option
         function showSubmenu(type, event) {
             event.stopPropagation(); // Prevent click event from bubbling up
         
             document.getElementById('mainDropdown').style.display = 'none'; // Hide the main options
-        
-            // Show the selected submenu
-            if (type === 'clinic') {
-                document.getElementById('clinicSubmenu').style.display = 'block';
-            } else if (type === 'research') {
-                document.getElementById('researchSubmenu').style.display = 'block';
-            }
         }
         
-        // Go back to the main menu
-        function goBack() {
-            document.getElementById('clinicSubmenu').style.display = 'none';
-            document.getElementById('researchSubmenu').style.display = 'none';
-            document.getElementById('mainDropdown').style.display = 'block';
-        }
         
         // Close the dropdown if clicked outside
         document.addEventListener('click', function(e) {

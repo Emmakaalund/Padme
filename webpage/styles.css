@@ -7,7 +7,6 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -27,14 +26,14 @@ body::after {
     background-color: #8EB4E3;
 }
 .logo img {
-    height: 110px; 
+    height: 7em; 
     width: auto; 
 }
 .mainFooter {
     background-color: white;
     color: black;
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625em 0;
     width: 100%;
     flex: 1;
 }
@@ -55,34 +54,52 @@ body::after {
     }
 }
 .vision-wrapper {
-    
     background-color: whitesmoke;
     width: 100%;
 }
-.vision {
+.vision-header {
     margin: 0 auto;
     width: 65%;
+    padding : 2em;
+}
+.vision-feature {
+    display: flex;
+    margin: 0 auto;
     padding: 2em;
+    justify-content: space-between;
+    width: 65%;
+    img {
+        max-width: 20em;
+        border-radius: 0.2em;
+    }
+}
+.feature-text {
+    width: 70%;
+
+}
+.feature-titel {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
 }
 .footer-logos {
-    
     img {
-        max-height: 50px;
+        max-height: 3.125em; 
         padding: 1.5em;
     }
 }
 
 .AUHLogo {
     overflow: hidden;
-    height: 35px;
+    height: 2.18em;
 }
 .SDCA {
     overflow: hidden;
-    height: 50px;
+    height: 3.125em;
 }
 .RgMidt {
     overflow: hidden;
-    height: 45px;
+    height: 2.8125em; 
 }
 
 /*Team*/
@@ -111,7 +128,7 @@ body::after {
 }
 .portrait-wrapper span {
     display: block;
-    padding: 5px;
+    padding: 0.3125em;
 }
 .portrait-text {
     color: rgb(92, 17, 17);
@@ -126,24 +143,30 @@ body::after {
 /*Team Profile*/
 .team-profile-container {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 4em;
     margin: 50px auto;
     width: 80%;
 }
 .profile-picture {
     text-align: center;
     width: 30%;
+    margin-top: 1.5em;
 }
 .profile-picture img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 9.375em;
+    height: 9.375em;
     object-fit: cover;
 }
 .profile-picture h1 {
-    margin-top: 10px;
+    margin-top: 0.625em;
     font-size: 1.5em;
+}
+.profile-description {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+    width: 60%;
 }
 .profile-info {
     width: 70%;
@@ -157,23 +180,9 @@ body::after {
     color: gray;
     margin-bottom: 10px;
 }
-.contact-icons {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-.contact-icons a {
-    text-decoration: none;
-    color: maroon;
-    font-size: 1em;
-}
-.profile-description {
-    font-size: 1em;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 30px auto;
-    width: 60%;
-}
+
+
+
 
 /*News*/
 .news-text-container {
@@ -210,8 +219,8 @@ body::after {
     margin-bottom: 20px;
 }
 .contact-person img {
-    width: 100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -226,6 +235,19 @@ body::after {
     margin: 0 auto;
     width: 50%;
     text-align: left;
+    padding: 2em;
+    
+}
+.contact-picture {
+    padding-top: 2em;
+    padding-bottom: 2em;
+     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        border-radius: 0.2em;
+    }
 }
 .contact-body-wrapper {
     background-color: whitesmoke;
@@ -241,9 +263,9 @@ body::after {
     gap: 10px;
 }
 .subpage-logo-and-title img {
-    height: 55px;
+    height: 3.4375em;
     width: auto;
-    padding: 10px;
+    padding: 0.625em;
 }
 .subpage-logo-and-title a {
     font-size: 1.5em;
@@ -292,6 +314,7 @@ body::after {
 /* Dropdown Menu */
 .dropdown-container {
     position: relative;
+    color: white;
 }
 
 /* Base dropdown style */
