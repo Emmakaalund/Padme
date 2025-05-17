@@ -44,19 +44,34 @@ body::after {
 }
 .group-pic {
     margin: 0 auto;
-    width: 50%;
+    max-width: 65%;
+    padding: 2em;
+    img {
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.5em;
+    }
 }
 .vision-wrapper {
+    
     background-color: whitesmoke;
     width: 100%;
 }
 .vision {
     margin: 0 auto;
-    width: 50%;
+    width: 65%;
+    padding: 2em;
 }
-.footer-logos img {
-    max-height: 50px;
+.footer-logos {
+    
+    img {
+        max-height: 50px;
+        padding: 1.5em;
+    }
 }
+
 .AUHLogo {
     overflow: hidden;
     height: 35px;
