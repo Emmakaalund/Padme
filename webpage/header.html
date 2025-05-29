@@ -14,12 +14,12 @@
             <nav class="main-nav-links">
                 <a href="/webpage/news.html">News</a>
                 <a href="/webpage/team.html">Team</a>
-                <div class="dropdown-container" id="projectDropdown">
+                <div class="dropdown-container-header" id="projectDropdown">
                     <p>Research</p>
-                    <div class="dropdown" id="mainDropdown"> 
-                        <a href="/webpage/Projects/ClinicProjects/projektSkabelonMedIndhold.html">Første kliniske projekt</a>
+                    <div class="dropdown-header" id="mainDropdown"> 
                         <a href="/webpage/Projects/ClinicProjects/PrepareChild.html">PREPARE CHILD - AUH</a>
-
+                        <a href="/webpage/Projects/ClinicProjects/PrepareChild.html">Projekt 2</a>
+                        <a href="/webpage/Projects/ClinicProjects/PrepareChild.html">Projekt 3</a>
                     </div>
                 </div>
                 
@@ -29,25 +29,4 @@
     </div>
 </header>
 <body>
-    <script>
-        let isDropdownLocked = false; // To track if menu is locked open after a click
-             
-        // Show submenu based on the clicked option
-        function showSubmenu(type, event) {
-            event.stopPropagation(); // Prevent click event from bubbling up
-        
-            document.getElementById('mainDropdown').style.display = 'none'; // Hide the main options
-        }
-        
-        
-        // Close the dropdown if clicked outside
-        document.addEventListener('click', function(e) {
-            const dropdown = document.getElementById('projectDropdown');
-            if (!dropdown.contains(e.target) && isDropdownLocked === false) {
-                dropdown.classList.remove('open'); // Close dropdown
-                goBack(); // Go back to main options
-            }
-        });
-        </script>
-        
 </body>
