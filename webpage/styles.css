@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Use Roboto as the default font */
+    font-family: sans-serif; /* "Roboto", sans-serif;*/
 }
 
 body {
@@ -45,6 +45,7 @@ body::after {
     margin: 0 auto;
     max-width: 65%;
     padding: 2em;
+    text-align: justify;
     img {
         max-width: 90%;
         display: block;
@@ -64,9 +65,9 @@ body::after {
 }
 .vision-feature {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 2em;
-    justify-content: space-between;
     width: 65%;
     img {
         max-width: 20em;
@@ -74,18 +75,29 @@ body::after {
     }
 }
 .feature-text {
-    width: 70%;
-
+    width: 60%;
+    text-align: justify;
 }
 .feature-titel {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
 }
+.feature-figure {
+    max-width: 35%;
+    img {
+        max-width: 100%;
+    }
+}
+
 .footer-logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 65%;
+    padding: 1em;
     img {
         max-height: 3.125em; 
-        padding: 1.5em;
     }
 }
 
@@ -181,25 +193,29 @@ body::after {
     margin-bottom: 10px;
 }
 
-
-
-
 /*News*/
 .news-text-container {
     margin: 0 auto;
-    width: 50%;
+    width: 65%;
     padding: 2%;
 }
-.news-container {
+.news-wrapper{
+    background-color: whitesmoke;
+}
+.news-container-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+    justify-content: space-between;
+    width: 65%;
     margin: 0 auto;
-    justify-content: center;
     padding: 50px;
     gap: 10px;
 }
-
+.publications-wrapper {
+    width: 50%;
+}
+.activities-wrapper {
+    width: 50%;
+}
 /*Contact*/
 .contact-text-container {
     margin: 0 auto;
@@ -229,7 +245,6 @@ body::after {
 }
 .contact-wrapper {
     width: 100%;
-   
 }
 .contact-header {
     margin: 0 auto;
@@ -252,9 +267,7 @@ body::after {
 .contact-body-wrapper {
     background-color: whitesmoke;
     padding: 50px 0 0 0;
-
 }
-
 
 /*Subpage*/
 .subpage-logo-and-title {
@@ -379,9 +392,6 @@ body::after {
     font-weight: bold;
 }
 
-
-
-
 /*Projects*/
 .project-header{
     flex-wrap: wrap;
@@ -397,7 +407,6 @@ body::after {
     width: 50%;
     margin: 0 auto;
     padding: 10px;
-
 }
 .project-contact-wrapper{
     background-color: white;
@@ -419,15 +428,11 @@ body::after {
         list-style-type: none;
     }
 }
-
-
-
 .project-researchers-funding {
     li {
         list-style-type: none;
     }
 }
-
 /*Aside*/
 aside {
     width: 35%;
