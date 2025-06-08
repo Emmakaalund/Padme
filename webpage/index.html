@@ -84,9 +84,24 @@
             <img src="/webpage/images/AULogo.svg" class="AULogo">
         </div>
     </footer>
+
     <script>
+        // Load the header
+        fetch('/webpage/header.html')
+            .then(res => res.text())
+            .then(html => {
+                const headerPlaceholder = document.querySelector('#header-placeholder');
+                headerPlaceholder.innerHTML = html;
+                const scripts = headerPlaceholder.querySelectorAll('script');
+                scripts.forEach((script) => {
+                    const newScript = document.createElement('script');
+                    newScript.text = script.textContent;
+                    document.body.appendChild(newScript);
+                });
+            });
+
         // Set the document title
         document.title = 'PADME';
-    </script>
+        </script>
 </body>
 </html>
